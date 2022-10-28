@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es">            <!--LENGUAJE DE LA PAGINA EN ESTE CASO ESPAÑOL-->
+    <!--CABECERA DE LA PAGINA HTML-->
+    <head>
+        <!--DECLARACION DE CARACTERISTICAS BASICAS DE LA PAGINA-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--TITULO-->
+        <title>
+            Centro Medico Bienestar
+        </title>
+        <!--VINCULACION CON CSS PARA ESTILOS-->
+        <link rel="stylesheet" href="CSS/Estilos.css">
+        <link rel="stylesheet" href="CSS/fontello.css">
+        <link rel="stylesheet" href="CSS/estiloequipo.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="JavaS/header.js"></script>
+        <script> 
+            var sonido=new Audio(); 
+            sonido.src="AUDIO/sonido3.mp3";
+        </script>
+    </head>
+    <!--CUERPO DE LA PAGINA HTML-->
+    <body>
+        <!--HEADER DE LAS PARTE DE LA PAGINA-->
+        <header>
+            <div class="wrapper">
+                <!--PARTE IZQUIERDA DEL HEADER CON LAS LETRAS EN MOVIMIENTO-->
+                <div class="LETRAS-MOV">
+                    <h1>
+                        <cente class="typed"></span>
+                    </h1> 
+                </div>
+                <!--ELEMENTOS DEL HEADER PARA PODER SELECCIONARLOS-->
+                <div class="lbl-menu">
+                    <label for="radio1">INICIO</label>
+                    <label for="radio2">QUIENES SOMOS</label>
+                    <label for="radio3">CONSULTORIO</label>
+                    <label for="radio4">FARMACIA</label>
+                    <label for="radio5">CONTACTO</label>
+                    <label for="radio6">PREGUNTAS FRECUENTES</label>
+                </div>  
+            </div>    
+        </header>
+        <!--BOTONES DE REDES-->
+        <div class="container-redes">
+            <input type="checkbox" id="btMas">
+            <div class="redes">
+                <!--LINK A PAGINA DE FACEBOOK-->
+                <a href="https://www.facebook.com/Centro-M%C3%A9dico-Bienestar-111939294615832/?ref=page_internal" target="_blank" class="icon-facebook"></a>
+                <!--LINK A PAGINA DE TWITTER-->
+                <a href="https://twitter.com/MedicoBienestar" target="_blank" class="icon-twitter"></a>
+                <!--LINK A PAGINA DE INSTAGRAM-->
+                <a href="https://www.instagram.com/centromedicobienestar/?hl=es" target="_blank" class="icon-instagram"></a>
+                 <!--LINK A CORREO-->
+                <a href="mailto:CMB@gmail.com" target="_blank" class="icon-gmail"></a>
+            </div>
+            <div class="btMas">
+                <label for="btMas" class="icon-plus"></label>
+            </div>
+        </div>
+        <!--CONTENIDO DEL HEADER-->
+        <div class="VENTANA">
+            <!--VENTANA RADIO1 (INICIO)-->
+            <input type="radio" name="radio" id="radio1" checked>
+            <div class="tab1">
+                <p class="PROMO wrapper">PROMOCIONES</p>   
+                <!--SLIDER DE PROMCIONES-->
+                <section class="container-slider">
+                    <section class="slider" id="slider">
+                        <section class="section-slider">
+                            <img src="IMG/PROMO1.jpg" alt="" class="image-slider">
+                        </section>
+                        <section class="section-slider">
+                            <img src="IMG/PROMO2.jpg" alt="" class="image-slider">
+                        </section>
+                        <section class="section-slider">
+                            <img src="IMG/PROMO3.jpg" alt="" class="image-slider">
+                        </section>
+                        <section class="section-slider">
+                            <img src="IMG/PROMO4.jpg" alt="" class="image-slider">
+                        </section>
+                    </section> 
+                    <section class="bt-slider bt-slider-right" id="bt-right">&#62</section>
+                    <section class="bt-slider bt-slider-left" id="bt-left">&#60</section>             
+                </section> 
+                <script src="JavaS/slider.js"></script>   
+                <br><br><br>
+                <table>
+                    <tr>
+                        <td><img class="IMG-INICIO" src="IMG/staff.jpg" alt=""></td>
+                        <td>
+                        <p style="top: 1px; text-align: center; color: white; background: 
+                        #234; font-size: 30px; line-height: 50px;">
+                        ACERCA DE NOSOTROS</p>
+                        <br><br><br>
+                        <p class="P-INICIO">El centro medico bienestar (CMB) es una institución encargada y 
+                        comprometida con la salud de sus pacientes, contamos con el personal 
+                        mas capacitado y la mejor tecnologia para poder tratarte a ti y tu familia. Realiza tu cita dando 
+                        click 
+                        <a style="cursor: pointer; color: orangered; font-size: 30px; font-family: Arial, Helvetica, 
+                        sans-serif; line-height: 25px; text-align: justify;" href="#radio3"><u>aqui</u></a>
+                        
+                        </p>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <table>
+                    <tr>
+                        <td>
+                            <video autoplay muted height="500" width="500">
+                            <source src="VIDEO/CMB-video.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                        <td><p style="top: 1px; text-align: center; color: white; background: 
+                            #234; font-size: 30px; line-height: 50px;">
+                            NUESTRAS INSTALACIONES</p>
+                            <br><br>
+                            <p class="P-INICIO">Las instalaciones del CMB son lo ultimo en tecnologia, estan se
+                                encuentran en multiples puntos de la CDMX y podemos observar un pequeño recorrido 
+                                virtual</p>
+                        </td>
+                        <td><img class="IMG-INICIO2" src="IMG/staff2.jpg" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+            <!--VENTANA RADIO2 (QUIENES SOMOS)-->
+            <input type="radio" name="radio" id="radio2">
+            <div class="tab2">
+                <p class="PARRAFOS">
+                <img src="IMG/staff4.jpg" align="right" width="500" height="300">  
+                 El Centro Medico para el Bienestar (CMB), es un centro 
+                 medico dedicado a ofrecer servicios de salud a buen precio y de manera 
+                 confiable.
+                 Las personas que consultan CMB pueden encontrar información sobre los 
+                 médicos especialistas que ofrecen su servicio, así como los horarios 
+                 disponibles para consulta. Tendrán a su alcance un catalogo farmacéutico 
+                 para adquirir los medicamentos recetados.</p>
+                <h2 class="SUBTITULOS">    MISIÓN     </h2>
+                <p class="PARRAFOS">Satisfacer de manera eficaz y eficiente las necesidades 
+                 de cuidado de salud de la comunidad. Brindar a toda la comunidad la mejor 
+                 atención medica basada en la evidencia científica y contenido ético, 
+                 acompañando al paciente y su familia. Colaborar con la Educación del 
+                 paciente, su familia y la sociedad, brindando cuidado y promoción de
+                 actitudes saludables. Garantizar la revisión y actualización de los 
+                 conocimientos, procesos, tecnologías y estructuras, gestionando nuestros 
+                 recursos con racionalidad económica de forma transparente y honesta.</p>
+                <h2 class="SUBTITULOS">    VISIÓN     </h2>
+                <p class="PARRAFOS">Crear y sostener un sistema integral de salud, que ofrezca
+                 un espacio de crecimiento y desarrollo profesional enfocado en la 
+                 excelencia y calidez en la asistencia al paciente y su familia.</p>
+                <h2 class="SUBTITULOS">    VALORES     </h2>
+                <p class="PARRAFOS">
+                <img src="IMG/staff5.jpg" align="left" width="700" height="370">
+                <b>Trabajo en equipo:</b> Trabajar con un objetivo común, 
+                 respetando y valorando las diferentes opiniones, fortaleciendo las relaciones 
+                 interpersonales y priorizando el éxito del equipo en beneficio 
+                 del resultado por sobre el éxito individual.</p><br>
+                <p class="PARRAFOS"><b>Equidad:</b> En la utilización de los recursos y 
+                 servicios de la institución sin distinción de edad, género, grupo social, 
+                 ideología y credo, estado de salud o enfermedad.</p><br>
+                <p class="PARRAFOS"><b>Responsabilidad:</b> Construir las tareas orientadas 
+                 al logro de los mejores resultados. Asumir un rol activo en la labor diaria 
+                 tanto en la clínica como dentro de la sociedad.</p><br>
+                <p class="PARRAFOS"><b>Ética:</b> Mantener una conducta transparente, honesta
+                  y ocupada por el confort de todas las personas con las que interactuamos.</p><br>
+                <p class="PARRAFOS"><b>Responsabilidad:</b> Desarrollar todas las tareas, 
+                 enfocando el esfuerzo en brindar atención de calidad a nuestros pacientes 
+                 y su familia.</p><br>
+                <p class="PARRAFOS"><b>Eficiencia:</b> Lograr los objetivos utilizando procesos
+                  y métodos de trabajo que optimicen el desempeño con la mejor utilización de 
+                 los recursos.</p>
+                <p class="PARRAFOS"><b>Nuestros Medicos:</b>Contamos con un equipo de profesionales
+                altamente cualificado para el abordaje de diferentes parecimientos. </p><br>              
+                <canvas id="grafico" width="60" height="25" ></canvas>
+                <script>
+                    var ctx = document.getElementById("grafico").getContext("2d");
+                    var myChart = new Chart(ctx,{
+                        type:"bar",                    
+                        data:{
+                            labels:['Pedriatria','Medicina General','Ginecologia','Dermatologia','Oftalmologia','Odontologia'],
+                            datasets:[{
+                                label:'Doctores por Especialidad',
+
+                                data:[4,5,3,2,1,2],
+                                backgroundColor:[
+                                    'rgb(255, 204, 0, 0.5)',
+                                    'rgb(51, 204, 51, 0.5)',
+                                    'rgb(153, 102, 255, 0.5)',
+                                    'rgb(255, 102, 0, 0.5)',
+                                    'rgb(0, 153, 153, 0.5)',
+                                    'rgb(255, 51, 153, 0.5)'
+                                ],
+                                borderColor:[
+                                    'rgb(255, 204, 0)',
+                                    'rgb(51, 204, 51)',
+                                    'rgb(153, 102, 255)',
+                                    'rgb(255, 102, 0)',
+                                    'rgb(0, 153, 153)',
+                                    'rgb(255, 51, 153)'
+                                ],
+                                borderWidth: 2                           
+                            }]
+                        }                       
+                    });
+                </script>
+                <br>
+                <p class="PARRAFOS"><b>Nuestros Pacientes:</b>Los pacientes que nos visitan
+                    buscan diferentes areas de consulta, en la grafica se muestran los porcentajes
+                    de pacientes por cada especialidad. </p><br>
+                <canvas id="grafico2" width="60" height="25" ></canvas>
+                <script>
+                    var ctx = document.getElementById("grafico2").getContext("2d");
+                    var myChart = new Chart(ctx,{
+                        type:"doughnut",                         
+                        data:{
+                            labels:['Pedriatria','Medicina General','Ginecologia','Dermatologia','Oftalmologia','Odontologia'],
+                            datasets:[{
+                                label:'Porcentajes de pacientes por Especialidad',   
+                                data:[10,30,20,15,10,15],
+                                backgroundColor:[
+                                    'rgb(255, 204, 0, 0.5)',
+                                    'rgb(51, 204, 51, 0.5)',
+                                    'rgb(153, 102, 255, 0.5)',
+                                    'rgb(255, 102, 0, 0.5)',
+                                    'rgb(0, 153, 153, 0.5)',
+                                    'rgb(255, 51, 153, 0.5)'
+                                ],
+                                borderColor:[
+                                    'rgb(255, 204, 0)',
+                                    'rgb(51, 204, 51)',
+                                    'rgb(153, 102, 255)',
+                                    'rgb(255, 102, 0)',
+                                    'rgb(0, 153, 153)',
+                                    'rgb(255, 51, 153)'
+                                ],
+                                borderWidth: 2                              
+                            }]
+    
+                        }                           
+                    });
+                </script>
+            </div>
+            <!--VENTANA RADIO3 (CONSULTORIO)-->
+            <input type="radio" name="radio" id="radio3" >
+            <div class="tab3">
+                <h2 class="subtitulo">  CONSULTAS   </h2>
+                <br>
+                <p class="PARRAFOS">Contamos con Consulta Médica y más servicios de salud.
+                    Además del servicio de la Consulta Médica, contamos con más servicios para poder cuidar de ti 
+                    y los tuyos. Visita nuestros consultorios y conoce todos nuestros servicios disponibles.</p>
+                <br><br>    
+                <img src="IMG/CONSULTA.JPG" align="center" style="width: 1480px; height: 700px;"></IMg>
+            
+                <section id="contacto">
+                    <section class="titulo-contacto">
+                        <h2 class="subtitulo">CONTACTENOS</h2>
+                        <h1 class="titulo">agende su cita</h1> 
+                    </section>
+                    <form action="validacionDatos.php" method="post" id="formulario">
+                        <section class="doscampos">
+                            <section class="icono">
+                                <input type="text" id="nombre" name="nombre" class="input-text" placeholder="Nombre">
+                                <i class="icon-user"></i>
+                            </section>
+                            <section class="icono">
+                                <input type="email" id="email" name="email" class="input-email" placeholder="Email">
+                                <i class="icon-mail"></i>
+                            </section>
+                            <section class="icono">
+                                <input type="date" id="date" name="date" class="input-fecha" placeholder="fecha">
+                                <i class="icon-mail"></i>
+                            </section>
+                            <section class="icono">
+                                <input type="time" id="time" name="time" class="input-hora" placeholder="hora">
+                                <i class="icon-mail"></i>
+                            </section>
+                        </section>
+                        <section class="campo">
+                            <section class="icono textareaicono">
+                                <textarea name="datos adicionales" id="comentarios" class="textarea" placeholder="Ingrese comentarios"></textarea>
+                                <i class="icon-chat"></i>
+                            </section>
+                        </section>
+                        <section class="campo-boton">
+                            <input type="submit" class="btn btn-input" value="enviar" >
+                        </section>
+                        
+                    </form>
+                </section>
+                <section id="equipo">
+                    <section class="persona">
+                            <img src="/IMG/doctor1.jpg" alt="" class="imagen">
+                            <section class="infor">
+                    
+                                <h2>Alan Zafra</h2>
+                                <p>Psiquiatra</p>
+                                <section class="social-media">
+                                    <a href=""><span class="fab fa-facebook"></span></a>
+                                   <a href=""><span class="fab fa-twitter-square"></span></a>
+                                </section>
+                            </section>
+                    
+                    </section>
+                    
+                    <section class="persona">
+                        <img src="/IMG/doctor2.jpg" alt="" class="imagen">
+                        <section class="infor">
+                    
+                            <h2>Jade rabadan </h2>
+                            <p>Medico general</p>
+                            <section class="social-media">
+                                <a href=""><span class="fab fa-facebook"></span></a>
+                                <a href=""><span class="fab fa-twitter-square"></span></a>
+                              
+                            </section>
+                        </section>
+                    
+                    </section>
+                    
+                    <section class="persona">
+                        <img src="IMG/doctor3.jpg" alt="" class="imagen">
+                        <section class="infor">
+                    
+                            <h2>Eileen Alonso</h2>
+                            <p>Dermatologo</p>
+                            <section class="social-media">
+                                <a href=""><span class="fab fa-facebook"></span></a>
+                                <a href=""><span class="fab fa-twitter-square"></span></a>
+                              
+                            </section>
+                        </section>
+                    
+                    </section>
+                    
+                    <section class="persona">
+                        <img src="/IMG/doctor4.jpg" alt="" class="imagen">
+                        <section class="infor">
+                    
+                            <h2>Azahel Gonzalez</h2>
+                            <p>Cardiologo</p>
+                            <section class="social-media">
+                                <a href=""><span class="fab fa-facebook"></span></a>
+                                <a href=""><span class="fab fa-twitter-square"></span></a>
+                              
+                            </section>
+                        </section>
+                    
+                    </section>
+                    
+                    <section class="persona">
+                        <img src="/IMG/doctor5.png" alt="" class="imagen">
+                        <section class="infor">
+                    
+                            <h2>Keni Lopez</h2>
+                            <p>Oftalmologo</p>
+                            <section class="social-media">
+                                <a href=""><span class="fab fa-facebook"></span></a>
+                                <a href=""><span class="fab fa-twitter-square"></span></a>
+                              
+                            </section>
+                        </section>
+                    
+                    </section>
+                    
+                        </section>
+            </div>
+            <!--VENTANA RADIO4 (FARMACIA)-->
+            <input type="radio" name="radio" id="radio4">
+            <div class="tab4">
+                <table>
+                    <h2 class="FARMA wrapper"> PRODUCTOS </h2>
+                    <tr>
+                        <td><img src="IMG/MED1.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED2.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED3.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED4.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED5.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED6.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED7.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED8.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="IMG/MED9.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED10.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED11.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED12.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED13.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED14.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED15.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED16.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>         
+                    </tr>
+                    <tr>
+                        <td><img src="IMG/MED17.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED18.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED19.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED20.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED21.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED22.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED23.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED24.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="IMG/MED25.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED26.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED27.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED28.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED29.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED30.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED31.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                        <td><img src="IMG/MED32.jpg" alt="" width="185" height="185"><br> <button class="carrito" onmousedown="sonido.play()">agregar al carrito</button></td>
+                    </tr>
+                </table>
+                <!--Grafica MEdicamentos a la alza -->
+                <canvas id="grafico3" width="100" height="50" ></canvas>
+                <script>
+                    var ctx = document.getElementById("grafico3").getContext("2d");
+                    var myChart = new Chart(ctx,{
+                        type:"bar",                         
+                        data:{
+                            labels:['Ciproflox','Naproxeno','Plaquenil','Anaferon','Pepto-bismol'],
+                            datasets:[{
+                                label :'Medicamentos a la alza ' ,   
+                                data:[20,12,14,18,30],
+                                backgroundColor:[
+                                    'rgb(89, 185, 196, 0.5)',
+                                    'rgb(91, 155, 198, 0.5)',
+                                    'rgb(193, 73, 78, 0.5)',
+                                    'rgb(196, 106, 75, 0.5)',
+                                    'rgb(198, 145, 78, 0.5)'
+                                ],
+                                borderColor:[
+                                    'rgb(89, 185, 196)',
+                                    'rgb(91, 155, 198)',
+                                    'rgb(193, 73, 78)',
+                                    'rgb(196, 106, 75)',
+                                    'rgb(198, 145, 78)'
+                                ],
+                                borderWidth: 2                              
+                            }]
+    
+                        }                           
+                    });
+                </script>
+                <!-- SECCION DE CALCULADORA DE IMC Y CALORIAS -->
+        
+            <h1 class="Letras_secun"> Calcula tu Indice de masa corporal (IMC)</h1>
+            <!-- Seccion para ingresar Datos -->
+            <p class="letras_IMC">Peso (kg): <input type="text" id="kg" ></p>
+            <p class="letras_IMC">Altura (m): <input type="text" id="m"></p>
+            <button class="boton_imc" id="calc"  >Calcular</button>
+            <p class="letras_IMC">IMC: <span id="imc"></span></p>
+            <p class="letras_IMC">Diagnostico: <span id="lectura"></span></p>
+
+            <!-- SCRIPT PARA CALCULAR IMC -->
+            <script type="text/javascript">
+	            calc = document.getElementById("calc");
+	            kg = document.getElementById("kg");
+	            m = document.getElementById("m");
+	            imc = document.getElementById("imc");
+	            lectura = document.getElementById("lectura");
+
+	            calc.onclick = function(){
+		            if(kg.value!="" && m.value!=""){
+			            imcx = (kg.value / (m.value* m.value));
+			            imc.innerHTML = imcx
+			            console.log(imcx);
+
+			            if(imcx<18.5){ lectura.innerHTML = "Usted tiene un peso bajo"; }
+			            else if(imcx>=18.5 && imcx<=24.9){ lectura.innerHTML = "Usted tiene peso normal "; }
+			            else if(imcx>=25 && imcx<=29.9){ lectura.innerHTML = "Usted tiene sobrepeso"; }
+			            else if(imcx>30){ lectura.innerHTML = "Usted tiene Obesidad, consulte a un especialista"; }
+
+		            }else{
+			            alert("Debes ingresar peso y altura.")
+		            }
+                    };
+            </script>
+            
+                
+
+            </div>
+
+            <!--VENTANA RADIO5 (CONTACTO)-->
+            <input type="radio" name="radio" id="radio5">
+            <div class="tab5">
+                <h2 class="SUBTITULOS" style="text-align: center;"> TAMBIEN PUEDE ENCONTRARNOS EN LAS SIGUIENTES
+                SUCURSALES EN UN HORARIO DE ATENCION DE 6 am - 8 pm</h2>
+                <h3 style="font-size: 20px; line-height: 1.5; text-align: left;">SUCURSAL POLANCO</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.498255766519!2d-99.20689844902408!3d19.434073195603947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021c42362f39%3A0xd5efb5b985ea14b5!2sPolanco%20II%20Secc%2C%2011530%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1635403821035!5m2!1ses!2smx" width="1480" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3 style="font-size: 20px; line-height: 1.5; text-align: left;">SUCURSAL CENTRO</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7525.011554314157!2d-99.14106495214969!3d19.43374856487638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92d2e0e4dbd%3A0x905574a740c4893d!2sCentro%20Hist%C3%B3rico%20de%20la%20Cdad.%20de%20M%C3%A9xico%2C%20Centro%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1635403918743!5m2!1ses!2smx" width="1480" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3 style="font-size: 20px; line-height: 1.5; text-align: left;">SUCURSAL COYOACAN</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.4885459096135!2d-99.16554644902493!3d19.3479876483292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffdcbe23dd01%3A0xdec5f4203bfd1f90!2sCoyoac%C3%A1n%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1635403967286!5m2!1ses!2smx" width="1480" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3 style="font-size: 20px; line-height: 1.5; text-align: left;">SUCURSAL LANDAVISTA</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7522.150504009702!2d-99.13099255214753!3d19.495397960889004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9b87742310f%3A0x7061ed1277b423c5!2sLindavista%20Nte.%2C%2007300%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1635404038677!5m2!1ses!2smx" width="1480" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3 style="font-size: 20px; line-height: 1.5; text-align: left;">SUCURSAL BALBUENA</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17899.544337992742!2d-99.11452368719688!3d19.416049414062332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fea6fbd6ced5%3A0xc323bffc9a80d4d5!2sJard%C3%ADn%20Balbuena%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1635404167182!5m2!1ses!2smx" width="1480" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+             
+            </div>
+            <!--VENTANA RADIO6 (PREGUNTAS)-->
+            <input type="radio" name="radio" id="radio6">
+            <div class="tab6">
+                <p class="PARRAFOS"><br>
+                <strong>¿Cómo puedo solicitar la devolución o cambio de un producto?</strong><br><br>
+                Para realizar algún cambio o devolución de producto, acude a la sucursal donde se realizó la compra 
+                con tu ticket y la forma de pago, para esto, el producto que quieras cambiar/devolver debe de 
+                cumplir con las condiciones de la Política de Devolución, de lo contrario no podrá realizarse. <br><br>
+                <strong>  ¿Cuáles son las políticas de devolución de un producto? </strong><br><br>
+                Política de cambio y/o devolución de productos. <br><br>
+                Estimado cliente podrá solicitar devolución en especie o en efectivo de uno o varios productos adquiridos
+                 en CMB siempre y cuando cumpla con los siguientes puntos*: <br><br>
+                1.  El plazo máximo para aceptar la devolución en sucursal es de 30 días naturales a partir de la fecha
+                 de compra. <br><br>
+                2.  El Cliente debe presentar en buen estado y sin enmendaduras el ticket original de venta <br><br>
+                3.  El Cliente debe tramitar personalmente la devolución en la misma sucursal donde se realizó la 
+                compra. No se realizarán devoluciones en sucursales distintas a donde se realizó la compra. <br><br>
+                4.  El artículo a devolver por el Cliente debe encontrarse completo y en perfecto estado para su venta
+                 (es decir, que el empaque no esté roto, ni maltratado, los sellos de seguridad no deben estar
+                 violados, etc.), contar con fecha y lote de caducidad. <br><br>
+                5.       NO existen DEVOLUCIONES en:                    <br><br>
+                    a.  Recargas electrónicas.                          <br>
+                    b.  Cobro de servicios.                             <br>
+                    c.  Recargas viales.                                <br>
+                    d.  Medicamentos psicotrópicos (Grupo II y III).    <br>
+                    e.  Refrigerados.                                   <br>
+                    f.  Artículos que participan en Programa de Lealtad con Monedero del Ahorro*. Aplican Restricciones. <br>
+                    g.  Programas de Lealtad de Laboratorio (Por ejemplo: Pzifer y Novartis). <br>
+                    h.  Artículos asociados a promoción con cupón donde expiró su vigencia. <br>
+                    i.      Ventas pagadas con Tarjeta T-Envío. <br><br>
+                6.  En caso de devolución de un antibiótico no se devolverá la receta. <br><br>
+                7. Si la venta a devolver está facturada debe cancelarse para poder realizar la devolución. <br><br>
+                8. El cliente deberá solicitar el formato de Devoluciones y deberá llenarlo y firmarlo. <br><br>
+                9.  El Representante de Farmacia será la persona encargada de determinar si se realiza la devolución 
+                en efectivo o en especie. <br><br>
+                10.  El cliente deberá de presentar el Monedero del Ahorro al cual ha sido abonado el dinero electrónico 
+                por la compra y se deberá devolver el saldo abonado por dicha compra, en caso de haber obtenido el 
+                bono del 100+100 esté será descontado del Monedero del Ahorro. Si el cliente no cuenta con el saldo 
+                necesario para devolver el saldo abonado no será posible realizar la devolución o el cambio del producto. <br><br>
+                11. Sólo podrá autorizar el cambio y/o devolución de productos el Responsable de Farmacia o el 
+                Responsable en turno. *Farmacias del Ahorro no está obligado realizar cambios y/o devoluciones de productos
+                 y se reserva el derecho inclusive si se cumplen los puntos anteriormente mencionados. <br><br>
+                 ¿Cómo llegar? <br>
+                <canvas id="canvas2" width="500" height="500" style="border-width: 5px; border-color: black; border:solid"></canvas>
+                <script>
+                 
+                var fondo = document.getElementById("canvas2").getContext("2d");
+                fondo.fillStyle = "#ff8000";
+                fondo.lineWidth=2;
+                fondo.fillRect(0, 0, 60, 500);
+                
+                fondo.beginPath();
+                
+                var calles = document.getElementById("canvas2").getContext("2d");
+                calles.lineWidth=3;
+                calles.strokeRect(60,0,70,500);
+                calles.strokeRect(130,400,400,50);
+                calles.strokeRect(130,200,200,50);
+                calles.strokeRect(330,50,50,200);
+                calles.strokeRect(330,0,200,50);
+                calles.fillStyle = "#808080";
+                calles.fillRect(128,201,240, 48);
+                calles.fillRect(128,401,398, 48);
+                calles.fillRect(331,49,48, 200);
+                calles.fillRect(61,0,67, 500);
+                calles.fillRect(331,50,48,199);
+                calles.fillRect(331,0,200,50);
+                
+                
+                var local = document.getElementById("canvas2").getContext("2d");
+                local.fillStyle = "#006400";
+                local.fillRect(131,251,250, 148);
+                local.fillStyle = "#5564eb";
+                local.fillRect(381,51,120,110);
+                local.fillStyle = "#DA291C";
+                local.fillRect(381,155,120,95); 
+                local.fillStyle = "#8c004b";
+                local.fillRect(381,250,120,149);
+                local.fillStyle = "#FFE900";
+                local.fillRect(131,0,120,140);
+                local.fillStyle = "#ff0080";
+                local.fillRect(251,0,78,140);
+                local.fillStyle = "#56070C";
+                local.fillRect(131,140,199,59);
+                local.fillStyle = "#cc0000";
+                local.fillRect(131,450,499,60);
+                
+
+                var ctx = document.getElementById("canvas2").getContext("2d");
+                ctx.fillStyle = "#FFF";
+                ctx.font = "bold 22px sans-serif";
+                ctx.fillText("Parque de ciervos",140,340);
+                ctx.fillText("Linea 6 del metro",140,480);
+                ctx.fillText("Calle Barreto",250,440);
+                ctx.fillText("Calle Montes de Oca",140,240);
+                ctx.fillText("L",30,170);
+                ctx.fillText("i",30,190);
+                ctx.fillText("n",30,210);
+                ctx.fillText("e",30,230);
+                ctx.fillText("a",30,250);
+                ctx.fillText("6",30,290);
+                ctx.fillText("m",30,330);
+                ctx.fillText("e",30,350);
+                ctx.fillText("t",30,370);
+                ctx.fillText("r",30,390);
+                ctx.fillText("o",30,410);
+                ctx.fillText("C",90,170);
+                ctx.fillText("a",90,190);
+                ctx.fillText("l",90,210);
+                ctx.fillText("l",90,230);
+                ctx.fillText("e",90,250);
+                ctx.fillText("S",90,310);
+                ctx.fillText("a",90,330);
+                ctx.fillText("n",90,350);
+                ctx.fillText("t",90,370);
+                ctx.fillText("o",90,390);
+                ctx.fillText("s",90,410);
+               
+                ctx.font = "bold 18px sans-serif";
+                ctx.fillText("Costco",190,180);
+                ctx.fillText("Mc.Donalds",390,220);
+                ctx.fillText("Suburbia",390,340);
+                ctx.fillText("CMB",400,110);
+                ctx.fillText("Calle Palacios",370,30);
+                ctx.fillText("C",350,20);
+                ctx.fillText("a",350,38);
+                ctx.fillText("l",350,56);
+                ctx.fillText("l",350,74);
+                ctx.fillText("e",350,92);
+                ctx.fillText("R",350,110);
+                ctx.fillText("o",350,128);
+                ctx.fillText("b",350,146);
+                ctx.fillText("l",350,164);
+                ctx.fillText("e",350,182);
+                ctx.fillText("s",350,200);
+                ctx.fillStyle = "Black";
+                ctx.fillText("Coppel",140,70);
+                ctx.fillText("KFC",260,70);
+
+                </script>
+
+            
+                </p>
+            </div>
+        </div>
+        <script src="./JavaS/librer.js"></script>
+        <script src="JavaS/main.js"></script>
+    </body>
+</html>

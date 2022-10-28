@@ -1,0 +1,341 @@
+/*QUITAMOS LOS MARGENES POR DEFECTO*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+/*CLASES PARA EL HEADRER*/
+body{
+    background: url('FONDO2.jpg');
+}
+header{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background: #234;
+    background-image: url('LOGO.png');
+    background-position: 10px, 10px;
+    background-repeat: no-repeat;
+}
+/*CLASE PARA CENTRAR ELEMENTOS*/
+.wrapper{
+    width: 95%;
+    max-width: 1600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Letras para clase secundaria */
+.Letras_secun
+{
+    
+    color: rgba(63, 10, 1, 0.979);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+/* Letras Del IMC */
+.letras_IMC
+{
+    width: 100%;
+  background: #e0bdc2;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 7px;
+  border: 5px solid #4b0b0b;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: rgba(59, 13, 13, 0.808);
+    
+
+}
+/* Letras Del IMC */
+.boton_imc
+{
+  
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  color: white;
+  margin: 20px 0px;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*CLASE PARA LAS LETRAS CON MOVIMIENTO*/
+header .LETRAS-MOV{
+    color: white;
+    font-size: 20px;
+    line-height: 75px;
+    float: left;
+    font-family: arial,helvetica;
+}
+/*CLASE PARA EL MENU DE NAVEGACION*/
+header .lbl-menu{
+    float: right;
+    line-height: 75px;
+}
+/*CLASE PARA LOS ELEMENTOS DE NAVEGACION*/
+header .lbl-menu label{
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+}
+/*CLASE PARA EFECTO DE SELECCION*/
+header .lbl-menu label:hover{
+    background: #28435d;
+    border-radius: 20px;
+}
+/*CLASES PARA CUANDO BAJAMOS EN LA PAGINA*/
+.header2
+{
+    position: fixed;
+    background: #234;
+    height: 40px;
+    background-image: url('LOGO.png');
+    background-position: 10px, 10px;
+    background-repeat: no-repeat;
+}
+.header2 .LETRAS-MOV
+{
+    font-size: 15px;
+    line-height: 40px;
+}
+.header2 .lbl-menu{
+    line-height: 40px;
+}
+/*CLASES PARA CUANDO REDUCIMOS LA PAGINA*/
+@media screen and (max-width: 1360px){
+    header .LETRAS-MOV,
+    header .lbl-menu{
+        width: 100%;
+        text-align: center;
+        line-height: 60px;
+    }
+    .header2{
+        height: auto;
+    }
+    .header2 .LETRAS-MOV,
+    .header2 .lbl-menu{
+        line-height: 40px;
+    }
+}
+/*CLASES PARA LOS ELEMENTOS DE CADA VENTANA*/
+.VENTANA{
+    position: relative;
+}
+.VENTANA div{
+    position: absolute;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    background: white;
+    max-width: 1680px;
+    margin-left: 150px;
+    margin-top: 75px;
+    z-index: -1;
+}
+/*CLASE DE LAS VENTANAS (HACE QUE SE PUEDA 
+CAMBIAR DE UNA A OTRA)*/
+#radio1, #radio2, #radio3, #radio4, #radio5, #radio6{
+    display: none;
+}
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4,
+#radio5:checked ~ .tab5,
+#radio6:checked ~ .tab6{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    max-width: 1540px;
+    
+}
+/*CLASES PARA DISEÑO O FORMATO DE LETRAS*/
+.SUBTITULOS{
+    line-height: 2;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.PARRAFOS{
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*CLASES PARA EL SLIDER*/
+.container-slider{
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+    box-shadow: 0 0 0 5px #234; 
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    width: 400%;
+    height: 600px;
+    margin-left: -100%;
+}
+.section-slider{
+    width: 100%;
+}
+.image-slider{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*CLASE PARA LOS BOTONES DEL SLIDER*/
+.bt-slider{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(165, 165, 165, 0.7);
+    top: 350px;
+    transform: translateY(-50);
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bt-slider:hover{
+    background: rgb(255, 255, 255);
+}
+.bt-slider-right{
+    right: 111px;
+}
+.bt-slider-left{
+    left: 111px;
+}
+/*CLASES PARA LOS BOTONES DE CONTACTO*/
+#btMas{
+    display: none;
+}
+.container-redes{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.redes a, .icon-plus{
+    display: block;
+    text-decoration: none;
+    background: orangered;
+    color: white;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+.redes a:hover{
+    background: orange;
+}
+.icon-plus:hover{
+    background: orange;
+    color: orangered;
+}
+.redes a{
+    margin-bottom: -25px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btMas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.icon-plus{
+    font-size: 20px;
+}
+#btMas:checked~ .btMas .icon-plus{
+    transform: rotate(137deg);
+    font-size: 20px;
+}
+/*CLASE PROMOCIONES*/
+.PROMO{
+    text-align: center;
+    color: white;
+    background: #234;
+    width: 1343px;
+    font-size: 30px;
+    line-height: 50px;
+}
+/*CLASES FARMACIA*/
+button{
+    padding: 15px 40px;
+    width: 100px;
+    align-items: center;
+    transition: 0.3s;
+}
+.carrito{
+    padding: 15px 40px;
+    width: 185px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background:rgba(84, 204, 144, 0.9);
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: honeydew;
+    cursor: pointer;
+}
+button:hover{
+
+    padding: 15px 70px ;
+    background: rgb(44, 184, 86);
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background:rgba(84, 204, 144, 0.9);
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: honeydew;
+    cursor: pointer;
+}
+.FARMA{
+    text-align: center;
+    color: white;
+    background: #234;
+    width: 1495px;
+    font-size: 30px;
+    line-height: 50px;
+}
+/*CLASES TEXTO INICIO*/
+.P-INICIO{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    text-align: justify;
+}
+.IMG-INICIO{
+    border-width: 10px 10px 10px 10px;
+    border-color: #234;
+    border: solid #234;
+}
+.IMG-INICIO2{
+    border-width: 10px 10px 10px 10px;
+    border-color: #234;
+    border: solid #234;
+    width: 500px;
+}
